@@ -1,0 +1,17 @@
+.input {
+    &-border {
+        &-info {
+            &-2 {
+                border: 2px solid $info;
+            }
+        }
+    }
+
+    &-placeholder {
+        &-info {
+            &::placeholder {
+                color: $info;
+            }
+        }
+    }
+}

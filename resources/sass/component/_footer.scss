@@ -1,0 +1,30 @@
+
+  /*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+  #footer {
+    background: #fff;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+    color: $black-doff;
+    font-size: 14px;
+
+    @media screen and (min-width: map-get($grid-breakpoints, 'lg')) {
+        height: $height-footer-desktop;
+    }
+  }
+  #footer .credits {
+    font-size: 13px;
+    padding-top: 5px;
+    color: $black-doff;
+  }
+  #footer .footer-links a {
+    color: $black-doff;
+    padding-left: 15px;
+  }
+  #footer .footer-links a:first-child {
+    padding-left: 0;
+  }
+  #footer .footer-links a:hover {
+    color: #3498db;
+  }

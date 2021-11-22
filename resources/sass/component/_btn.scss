@@ -1,0 +1,26 @@
+.btn {
+
+    &-info {
+        color: white !important;
+    }
+    &-to-top {
+        @include isVisible(false);
+        @extend .border-0, .transition-default;
+        outline: none !important;
+
+        &.active {
+            background-color: $info;
+            @include isVisible(true);
+        }
+
+        &:focus {
+            @extend .shadow-none;
+        }
+    }
+
+    &--fixed-br {
+        position: fixed;
+        right: 15px;
+        bottom: 15px;
+    }
+}

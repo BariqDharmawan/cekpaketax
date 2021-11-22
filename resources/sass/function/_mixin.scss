@@ -1,0 +1,20 @@
+@mixin spacing($val: 0) {
+    margin: $val;
+    padding: $val;
+}
+
+@mixin isVisible($condition: true) {
+    @if $condition {
+        opacity: 1;
+        visibility: visible;
+    }
+    @else {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@mixin sameSize($size) {
+    width: $size;
+    height: $size;
+}
